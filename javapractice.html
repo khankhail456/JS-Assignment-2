@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Second Assignment</title>
+</head>
+<body>
+    <h1> "Q#1 to 15" by using array,functions,objects in js</h1>
+    <script>
+    //---  Question # 1  ---//
+    const number=[1,2,3,4,5]
+    if(number.length>0){
+        for(let i=0;i<number.length;i++){
+            console.log(number[i]);
+        }
+    }
+
+    //---  Question # 2  ---//
+    const fruits=["apple","banana","orange"];
+    if (fruits.length>=3){
+        console.log(fruits[0]);
+        console.log(fruits[fruits.length-1]);
+    }
+
+    //---  Question # 3  ---//
+    const fruitlist=["banana","apple"];
+    if(!fruitlist.includes("mango")){
+        fruitlist.push("mango");
+        console.log(fruitlist);
+    }
+
+    //---  Question # 4  ---//
+    const numberlist=[10,30,40,50]
+    console.log(numberlist.length);
+
+    //---  Question # 5 ---//
+    function sayhello(){
+        console.log("hello world");
+    }
+sayhello();
+
+//---  Question # 6  ---//
+function printsum(num1,num2){
+let sum=num1+num2;
+console.log(sum);
+}
+printsum(10,20);
+
+//---  Question # 7  ---//
+function getsquare(num){
+    return num*num;
+}
+let result=getsquare(5);
+console.log(result);
+
+//---  Question # 8  ---//
+function checkevenOdd(num){
+    if (num%2===0){
+        console.log(num+"is even");
+    }else{
+        console.log(num+"is Odd");
+    }
+}
+checkevenOdd(7);
+checkevenOdd(12);
+
+//---  Question # 9 ---//
+function findlargest(num1,num2){
+    if(num1>num2){
+        console.log(num1);
+    }else{
+        console.log(num2);
+    }
+}
+findlargest(15,25);
+
+//---  Question # 10  ---//
+function welcomeuser(name){
+    console.log("welcome"+name);
+}
+welcomeuser("Ali");
+
+//---  Question # 11  ---//
+const Student={
+    name:"zain",
+    age:18,
+    class:"10th"
+};
+console.log(Student.name);
+console.log(Student.age);
+console.log(Student.class);
+
+//---  Question # 12  ---//
+const car={
+    brand:"toyoto",
+    model:"corolla",
+    color:"black",
+};
+console.log(car.brand);
+
+//---  Question # 13  ---//
+let student={
+    name:"Ali",
+    age:18,
+};
+student.age=20;
+console.log(student.age);
+
+//---  Question # 14  ---//
+function sumArray(numbers){
+    let sum=0;
+    for(let i=0;i<numbers.length;i++){
+        sum=sum+numbers[i];
+    }
+    return sum;
+}
+let numbers=[20,30,40,50]
+console.log(sumArray(numbers));
+
+//---  Question # 15  ---//
+let studentDetail={
+    name:"Ali",
+    marks:[85,90,78,92]
+};
+function printstudentInfo(studentObj){
+console.log("student name:"+studentObj.name);
+console.log("marks:"+studentObj.marks);
+}
+printstudentInfo(studentDetail);
+
+
+    </script>
+</body>
+</html>
